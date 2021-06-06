@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 :root{
 
 }
 
 
 /* navbar */
+nav{
+  z-index: 2;
+}
  nav a.nav-link{
    font-weight: 500;
    letter-spacing: 0.6px;
@@ -32,4 +35,50 @@
   border-top: 2px solid rgb(45, 24, 231);
   border-bottom: 2px solid rgb(45, 24, 231);
 
+}
+
+
+/* header */
+
+.header-wrapper{
+  position:relative;
+  background: url("Jan-Business_team_5.jpg")no-repeat ;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Sigmar One', cursive;
+  z-index: 1;
+}
+.main-info h1{
+  color: blueviolet;
+  text-transform: uppercase;
+ 
+}
+/* typed text  */
+
+.typed-text{
+  font-size: 120px;
+  color: blue;
+
+}
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width:100vw;
+  z-index: 1;
 }
